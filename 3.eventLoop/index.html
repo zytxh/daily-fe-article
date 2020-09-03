@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #d1 {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+    #d2 {
+      width: 100px;
+      height: 100px;
+      background: blue;
+    }
+  </style>
+  <body>
+    <!-- <button id="btn">点击</button>
+    <div id="d1"></div>
+    <div id="d2"></div> -->
+
+    <div id="con">this is con</div>
+  </body>
+  <script type="module">
+    // btn.onclick = function () {
+    //   alert('click');
+    // };
+    // setTimeout(function timeout1() {
+    //   console.log('=======>', 'timeout1', '<=======');
+    // }, 5000);
+
+    // var con = document.getElementById('con');
+    var t = 0;
+    var con = document.getElementById('con');
+    con.onclick = function () {
+      setTimeout(function () {
+        con.textContent = 0;
+      }, 0);
+      setTimeout(function () {
+        con.textContent = 1;
+      }, 0);
+      setTimeout(function () {
+        con.textContent = 2;
+      }, 0);
+      setTimeout(function () {
+        con.textContent = 3;
+      }, 0);
+      setTimeout(function () {
+        con.textContent = 4;
+      }, 0);
+      setTimeout(function () {
+        con.textContent = 5;
+      }, 0);
+      setTimeout(function () {
+        con.textContent = 6;
+      }, 0);
+    };
+  </script>
+</html>
